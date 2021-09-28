@@ -1,0 +1,36 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int N=21;
+	    int s,e;
+	    s=e=(N/2)+1;
+		for(int i=1;i<=N;i++){
+		    if(i==1||i==N){
+		        for(int j=1;j<=N;j++)
+		           System.out.print(" * ");
+		  }
+		  else 
+		  {
+		     for(int j=1;j<=N;j++){
+		         if(j>=s && j<=e)
+		           System.out.print("   ");
+		         else 
+		         System.out.print(" * ");  
+		     }
+		    if(i<=N/2)
+		    {
+		    s--;
+		    e++;
+		    }
+		    else{
+		        s++;
+		        e--;
+		    }
+		  }
+		  
+		  System.out.println();
+		}
+		
+	}
+}
+
